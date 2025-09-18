@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" locus="chr1:155229000-155243500" version="8">
+    <Resources>
+        <Resource path="NA12886_GBA.bam" type="bam"/>
+        <Resource path="200100_GBA.bam" type="bam"/>
+        <Resource path="200104_GBA.bam" type="bam"/>
+    </Resources>
+    <Panel height="427" name="Panel1745015156681" width="2543">
+        <Track attributeKey="NA12886_GBA.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="12" id="NA12886_GBA.bam_coverage" name="Paternal Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="87.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NA12886_GBA.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="SQUISHED" experimentType="THIRD_GEN" fontSize="12" id="NA12886_GBA.bam" name="Paternal BAM" visible="true">
+            <RenderOptions colorOption="YC_TAG" groupByOption="TAG" groupByTag="HP"/>
+        </Track>
+    </Panel>
+    <Panel height="382" name="Panel1748548125549" width="2543">
+        <Track attributeKey="200100_GBA.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="12" id="200100_GBA.bam_coverage" name="Maternal Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="131.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="200100_GBA.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="SQUISHED" experimentType="THIRD_GEN" fontSize="12" id="200100_GBA.bam" name="Maternal BAM" visible="true">
+            <RenderOptions colorOption="YC_TAG" groupByOption="TAG" groupByTag="HP"/>
+        </Track>
+    </Panel>
+    <Panel height="394" name="Panel1748548125582" width="2543">
+        <Track attributeKey="200104_GBA.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="12" id="200104_GBA.bam_coverage" name="200104-trio Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="144.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="200104_GBA.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="SQUISHED" experimentType="THIRD_GEN" fontSize="12" id="200104_GBA.bam" name="200104-trio" visible="true">
+            <RenderOptions colorOption="YC_TAG" groupByOption="TAG" groupByTag="HP"/>
+        </Track>
+    </Panel>
+    <Panel height="40" name="FeaturePanel" width="2543">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="12" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="+" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;836.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.005012531328320802,0.34502923976608185,0.647451963241437,0.9649122807017544,0.9724310776942355"/>
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>
+

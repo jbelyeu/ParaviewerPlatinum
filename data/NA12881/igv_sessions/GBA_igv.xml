@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg38" locus="chr1:155229000-155243500" version="8">
+    <Resources>
+        <Resource path="NA12881_GBA.bam" type="bam"/>
+    </Resources>
+
+    <Panel height="3566" name="Panel1745015156681" width="2543">
+        <Track attributeKey="NA12881.paraphase.bam Coverage" autoScale="true" clazz="org.broad.igv.sam.CoverageTrack" fontSize="12" id="NA12881_GBA.bam_coverage" name="NA12881_GBA.bam Coverage" snpThreshold="0.2" visible="true">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="54.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track attributeKey="NA12881_GBA.bam" clazz="org.broad.igv.sam.AlignmentTrack" color="185,185,185" displayMode="SQUISHED" experimentType="THIRD_GEN" fontSize="12" id="NA12881_GBA.bam" name="NA12881_GBA.bam" visible="true">
+            <RenderOptions colorOption="YC_TAG" groupByOption="TAG" groupByTag="HP"/>
+        </Track>
+    </Panel>
+    
+    <Panel height="163" name="FeaturePanel" width="2543">
+        <Track attributeKey="Reference sequence" clazz="org.broad.igv.track.SequenceTrack" fontSize="12" id="Reference sequence" name="Reference sequence" sequenceTranslationStrandValue="+" shouldShowTranslation="false" visible="true"/>
+        <Track attributeKey="Refseq Genes" clazz="org.broad.igv.track.FeatureTrack" colorScale="ContinuousColorScale;0.0;836.0;255,255,255;0,0,178" fontSize="10" groupByStrand="false" id="https://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/ncbiRefSeq.txt.gz" name="Refseq Genes" visible="true"/>
+    </Panel>
+    
+    <PanelLayout dividerFractions="0.005012531328320802,0.7794486215538847,0.9573934837092731"/>
+    
+    <HiddenAttributes>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+        <Attribute name="NAME"/>
+    </HiddenAttributes>
+</Session>

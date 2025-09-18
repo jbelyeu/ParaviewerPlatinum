@@ -1,0 +1,237 @@
+20:18:53.540013 git.c:439               trace: built-in: git push origin main
+20:18:53.545297 run-command.c:655       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/jbelyeu/ParaviewerPlatinum.git
+20:18:53.556517 git.c:725               trace: exec: git-remote-https origin https://github.com/jbelyeu/ParaviewerPlatinum.git
+20:18:53.557364 run-command.c:655       trace: run_command: git-remote-https origin https://github.com/jbelyeu/ParaviewerPlatinum.git
+20:18:53.578955 http.c:699              == Info: Couldn't find host github.com in the .netrc file; using defaults
+20:18:53.581758 http.c:699              == Info: Host github.com:443 was resolved.
+20:18:53.581786 http.c:699              == Info: IPv6: (none)
+20:18:53.581793 http.c:699              == Info: IPv4: 140.82.116.3
+20:18:53.581878 http.c:699              == Info:   Trying 140.82.116.3:443...
+20:18:53.643713 http.c:699              == Info: Connected to github.com (140.82.116.3) port 443
+20:18:53.643850 http.c:699              == Info: ALPN: curl offers h2,http/1.1
+20:18:53.644118 http.c:699              == Info: (304) (OUT), TLS handshake, Client hello (1):
+20:18:53.651865 http.c:699              == Info:  CAfile: /etc/ssl/cert.pem
+20:18:53.651898 http.c:699              == Info:  CApath: none
+20:18:53.719358 http.c:699              == Info: (304) (IN), TLS handshake, Server hello (2):
+20:18:53.719968 http.c:699              == Info: (304) (IN), TLS handshake, Unknown (8):
+20:18:53.722619 http.c:699              == Info: (304) (IN), TLS handshake, Certificate (11):
+20:18:53.729248 http.c:699              == Info: (304) (IN), TLS handshake, CERT verify (15):
+20:18:53.730084 http.c:699              == Info: (304) (IN), TLS handshake, Finished (20):
+20:18:53.730430 http.c:699              == Info: (304) (OUT), TLS handshake, Finished (20):
+20:18:53.730475 http.c:699              == Info: SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+20:18:53.730509 http.c:699              == Info: ALPN: server accepted h2
+20:18:53.730538 http.c:699              == Info: Server certificate:
+20:18:53.730569 http.c:699              == Info:  subject: CN=github.com
+20:18:53.730592 http.c:699              == Info:  start date: Feb  5 00:00:00 2025 GMT
+20:18:53.730614 http.c:699              == Info:  expire date: Feb  5 23:59:59 2026 GMT
+20:18:53.730648 http.c:699              == Info:  subjectAltName: host "github.com" matched cert's "github.com"
+20:18:53.730684 http.c:699              == Info:  issuer: C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; CN=Sectigo ECC Domain Validation Secure Server CA
+20:18:53.730710 http.c:699              == Info:  SSL certificate verify ok.
+20:18:53.730869 http.c:699              == Info: using HTTP/2
+20:18:53.730966 http.c:699              == Info: [HTTP/2] [1] OPENED stream for https://github.com/jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack
+20:18:53.730987 http.c:699              == Info: [HTTP/2] [1] [:method: GET]
+20:18:53.731003 http.c:699              == Info: [HTTP/2] [1] [:scheme: https]
+20:18:53.731020 http.c:699              == Info: [HTTP/2] [1] [:authority: github.com]
+20:18:53.731036 http.c:699              == Info: [HTTP/2] [1] [:path: /jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack]
+20:18:53.731052 http.c:699              == Info: [HTTP/2] [1] [user-agent: git/2.40.1]
+20:18:53.731068 http.c:699              == Info: [HTTP/2] [1] [accept: */*]
+20:18:53.731085 http.c:699              == Info: [HTTP/2] [1] [accept-encoding: deflate, gzip]
+20:18:53.731101 http.c:699              == Info: [HTTP/2] [1] [accept-language: en-US, *;q=0.9]
+20:18:53.731117 http.c:699              == Info: [HTTP/2] [1] [pragma: no-cache]
+20:18:53.731199 http.c:646              => Send header, 0000000219 bytes (0x000000db)
+20:18:53.731231 http.c:658              => Send header: GET /jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack HTTP/2
+20:18:53.731248 http.c:658              => Send header: Host: github.com
+20:18:53.731263 http.c:658              => Send header: User-Agent: git/2.40.1
+20:18:53.731320 http.c:658              => Send header: Accept: */*
+20:18:53.731354 http.c:658              => Send header: Accept-Encoding: deflate, gzip
+20:18:53.731379 http.c:658              => Send header: Accept-Language: en-US, *;q=0.9
+20:18:53.731414 http.c:658              => Send header: Pragma: no-cache
+20:18:53.731424 http.c:658              => Send header:
+20:18:53.731683 http.c:699              == Info: Request completely sent off
+20:18:53.899240 http.c:646              <= Recv header, 0000000013 bytes (0x0000000d)
+20:18:53.899849 http.c:658              <= Recv header: HTTP/2 401
+20:18:53.899874 http.c:646              <= Recv header, 0000000026 bytes (0x0000001a)
+20:18:53.899885 http.c:658              <= Recv header: server: GitHub-Babel/3.0
+20:18:53.899900 http.c:646              <= Recv header, 0000000054 bytes (0x00000036)
+20:18:53.899909 http.c:658              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:18:53.899920 http.c:646              <= Recv header, 0000000041 bytes (0x00000029)
+20:18:53.899929 http.c:658              <= Recv header: content-type: text/plain; charset=UTF-8
+20:18:53.899942 http.c:646              <= Recv header, 0000000040 bytes (0x00000028)
+20:18:53.899950 http.c:658              <= Recv header: www-authenticate: Basic realm="GitHub"
+20:18:53.899962 http.c:646              <= Recv header, 0000000020 bytes (0x00000014)
+20:18:53.899970 http.c:658              <= Recv header: content-length: 74
+20:18:53.899979 http.c:646              <= Recv header, 0000000037 bytes (0x00000025)
+20:18:53.899986 http.c:658              <= Recv header: date: Thu, 18 Sep 2025 03:18:53 GMT
+20:18:53.899994 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:53.900002 http.c:658              <= Recv header: x-frame-options: DENY
+20:18:53.900018 http.c:646              <= Recv header, 0000000073 bytes (0x00000049)
+20:18:53.900027 http.c:658              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:18:53.900036 http.c:646              <= Recv header, 0000000059 bytes (0x0000003b)
+20:18:53.900058 http.c:658              <= Recv header: x-github-request-id: 6643:386E8C:5DF6CED:5FE9DE6:68CB7A1D
+20:18:53.900070 http.c:646              <= Recv header, 0000000002 bytes (0x00000002)
+20:18:53.900078 http.c:658              <= Recv header:
+20:18:53.900124 http.c:699              == Info: Connection #0 to host github.com left intact
+20:18:53.901208 run-command.c:655       trace: run_command: 'git credential-osxkeychain get'
+20:18:53.956593 git.c:725               trace: exec: git-credential-osxkeychain get
+20:18:53.957954 run-command.c:655       trace: run_command: git-credential-osxkeychain get
+20:18:53.995765 http.c:699              == Info: Found bundle for host: 0x600001f887e0 [can multiplex]
+20:18:53.995842 http.c:699              == Info: Re-using existing connection with host github.com
+20:18:53.995864 http.c:699              == Info: Server auth using Basic with user '6629063'
+20:18:53.995922 http.c:699              == Info: [HTTP/2] [3] OPENED stream for https://github.com/jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack
+20:18:53.995935 http.c:699              == Info: [HTTP/2] [3] [:method: GET]
+20:18:53.995942 http.c:699              == Info: [HTTP/2] [3] [:scheme: https]
+20:18:53.995949 http.c:699              == Info: [HTTP/2] [3] [:authority: github.com]
+20:18:53.995955 http.c:699              == Info: [HTTP/2] [3] [:path: /jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack]
+20:18:53.995965 http.c:699              == Info: [HTTP/2] [3] [authorization: Basic NjYyOTA2MzpnaG9fenU5VUNlYjFRTGdFOUhVVXcyeHZFdGxVb3dhcnZ3NEdER1I4]
+20:18:53.995971 http.c:699              == Info: [HTTP/2] [3] [user-agent: git/2.40.1]
+20:18:53.995977 http.c:699              == Info: [HTTP/2] [3] [accept: */*]
+20:18:53.995982 http.c:699              == Info: [HTTP/2] [3] [accept-encoding: deflate, gzip]
+20:18:53.995988 http.c:699              == Info: [HTTP/2] [3] [accept-language: en-US, *;q=0.9]
+20:18:53.996016 http.c:699              == Info: [HTTP/2] [3] [pragma: no-cache]
+20:18:53.996231 http.c:646              => Send header, 0000000306 bytes (0x00000132)
+20:18:53.996248 http.c:658              => Send header: GET /jbelyeu/ParaviewerPlatinum.git/info/refs?service=git-receive-pack HTTP/2
+20:18:53.996254 http.c:658              => Send header: Host: github.com
+20:18:53.996259 http.c:658              => Send header: Authorization: Basic <redacted>
+20:18:53.996264 http.c:658              => Send header: User-Agent: git/2.40.1
+20:18:53.996270 http.c:658              => Send header: Accept: */*
+20:18:53.996274 http.c:658              => Send header: Accept-Encoding: deflate, gzip
+20:18:53.996279 http.c:658              => Send header: Accept-Language: en-US, *;q=0.9
+20:18:53.996284 http.c:658              => Send header: Pragma: no-cache
+20:18:53.996289 http.c:658              => Send header:
+20:18:53.996314 http.c:699              == Info: Request completely sent off
+20:18:54.204098 http.c:646              <= Recv header, 0000000013 bytes (0x0000000d)
+20:18:54.204193 http.c:658              <= Recv header: HTTP/2 200
+20:18:54.204213 http.c:646              <= Recv header, 0000000026 bytes (0x0000001a)
+20:18:54.204222 http.c:658              <= Recv header: server: GitHub-Babel/3.0
+20:18:54.204298 http.c:646              <= Recv header, 0000000060 bytes (0x0000003c)
+20:18:54.204309 http.c:658              <= Recv header: content-type: application/x-git-receive-pack-advertisement
+20:18:54.204320 http.c:646              <= Recv header, 0000000054 bytes (0x00000036)
+20:18:54.204328 http.c:658              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:18:54.204337 http.c:646              <= Recv header, 0000000040 bytes (0x00000028)
+20:18:54.204345 http.c:658              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+20:18:54.204354 http.c:646              <= Recv header, 0000000018 bytes (0x00000012)
+20:18:54.204361 http.c:658              <= Recv header: pragma: no-cache
+20:18:54.204468 http.c:646              <= Recv header, 0000000053 bytes (0x00000035)
+20:18:54.204523 http.c:658              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+20:18:54.204549 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:54.204558 http.c:658              <= Recv header: vary: Accept-Encoding
+20:18:54.204567 http.c:646              <= Recv header, 0000000037 bytes (0x00000025)
+20:18:54.204574 http.c:658              <= Recv header: date: Thu, 18 Sep 2025 03:18:54 GMT
+20:18:54.204670 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:54.204694 http.c:658              <= Recv header: x-frame-options: DENY
+20:18:54.204708 http.c:646              <= Recv header, 0000000073 bytes (0x00000049)
+20:18:54.204745 http.c:658              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:18:54.204800 http.c:646              <= Recv header, 0000000059 bytes (0x0000003b)
+20:18:54.204810 http.c:658              <= Recv header: x-github-request-id: 6643:386E8C:5DF6DD8:5FE9ECE:68CB7A1D
+20:18:54.204831 http.c:646              <= Recv header, 0000000002 bytes (0x00000002)
+20:18:54.204840 http.c:658              <= Recv header:
+20:18:54.204918 http.c:699              == Info: Connection #0 to host github.com left intact
+20:18:54.204985 run-command.c:655       trace: run_command: 'git credential-osxkeychain store'
+20:18:54.244494 git.c:725               trace: exec: git-credential-osxkeychain store
+20:18:54.246544 run-command.c:655       trace: run_command: git-credential-osxkeychain store
+20:18:54.306117 run-command.c:655       trace: run_command: git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/jbelyeu/ParaviewerPlatinum.git/ --stdin
+20:18:54.317460 git.c:439               trace: built-in: git send-pack --stateless-rpc --helper-status --thin --no-progress https://github.com/jbelyeu/ParaviewerPlatinum.git/ --stdin
+20:18:54.321059 run-command.c:655       trace: run_command: git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+20:18:54.328477 git.c:439               trace: built-in: git pack-objects --all-progress-implied --revs --stdout --thin --delta-base-offset -q
+20:18:54.479170 http.c:699              == Info: Found bundle for host: 0x600001f887e0 [can multiplex]
+20:18:54.479225 http.c:699              == Info: Re-using existing connection with host github.com
+20:18:54.479234 http.c:699              == Info: Server auth using Basic with user '6629063'
+20:18:54.479270 http.c:699              == Info: [HTTP/2] [5] OPENED stream for https://github.com/jbelyeu/ParaviewerPlatinum.git/git-receive-pack
+20:18:54.479275 http.c:699              == Info: [HTTP/2] [5] [:method: POST]
+20:18:54.479277 http.c:699              == Info: [HTTP/2] [5] [:scheme: https]
+20:18:54.479280 http.c:699              == Info: [HTTP/2] [5] [:authority: github.com]
+20:18:54.479283 http.c:699              == Info: [HTTP/2] [5] [:path: /jbelyeu/ParaviewerPlatinum.git/git-receive-pack]
+20:18:54.479285 http.c:699              == Info: [HTTP/2] [5] [authorization: Basic NjYyOTA2MzpnaG9fenU5VUNlYjFRTGdFOUhVVXcyeHZFdGxVb3dhcnZ3NEdER1I4]
+20:18:54.479287 http.c:699              == Info: [HTTP/2] [5] [user-agent: git/2.40.1]
+20:18:54.479289 http.c:699              == Info: [HTTP/2] [5] [content-type: application/x-git-receive-pack-request]
+20:18:54.479292 http.c:699              == Info: [HTTP/2] [5] [accept: application/x-git-receive-pack-result]
+20:18:54.479294 http.c:699              == Info: [HTTP/2] [5] [content-length: 4]
+20:18:54.479399 http.c:646              => Send header, 0000000313 bytes (0x00000139)
+20:18:54.479406 http.c:658              => Send header: POST /jbelyeu/ParaviewerPlatinum.git/git-receive-pack HTTP/2
+20:18:54.479409 http.c:658              => Send header: Host: github.com
+20:18:54.479411 http.c:658              => Send header: Authorization: Basic <redacted>
+20:18:54.479413 http.c:658              => Send header: User-Agent: git/2.40.1
+20:18:54.479415 http.c:658              => Send header: Content-Type: application/x-git-receive-pack-request
+20:18:54.479417 http.c:658              => Send header: Accept: application/x-git-receive-pack-result
+20:18:54.479419 http.c:658              => Send header: Content-Length: 4
+20:18:54.479421 http.c:658              => Send header:
+20:18:54.479424 http.c:699              == Info: upload completely sent off: 4 bytes
+20:18:54.668440 http.c:646              <= Recv header, 0000000013 bytes (0x0000000d)
+20:18:54.668628 http.c:658              <= Recv header: HTTP/2 200
+20:18:54.668659 http.c:646              <= Recv header, 0000000026 bytes (0x0000001a)
+20:18:54.668674 http.c:658              <= Recv header: server: GitHub-Babel/3.0
+20:18:54.668696 http.c:646              <= Recv header, 0000000053 bytes (0x00000035)
+20:18:54.668709 http.c:658              <= Recv header: content-type: application/x-git-receive-pack-result
+20:18:54.668726 http.c:646              <= Recv header, 0000000054 bytes (0x00000036)
+20:18:54.668737 http.c:658              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:18:54.668753 http.c:646              <= Recv header, 0000000040 bytes (0x00000028)
+20:18:54.668764 http.c:658              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+20:18:54.668778 http.c:646              <= Recv header, 0000000018 bytes (0x00000012)
+20:18:54.668788 http.c:658              <= Recv header: pragma: no-cache
+20:18:54.668802 http.c:646              <= Recv header, 0000000053 bytes (0x00000035)
+20:18:54.668813 http.c:658              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+20:18:54.668826 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:54.668837 http.c:658              <= Recv header: vary: Accept-Encoding
+20:18:54.668852 http.c:646              <= Recv header, 0000000019 bytes (0x00000013)
+20:18:54.668863 http.c:658              <= Recv header: content-length: 0
+20:18:54.668876 http.c:646              <= Recv header, 0000000037 bytes (0x00000025)
+20:18:54.668956 http.c:658              <= Recv header: date: Thu, 18 Sep 2025 03:18:54 GMT
+20:18:54.668971 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:54.668982 http.c:658              <= Recv header: x-frame-options: DENY
+20:18:54.668996 http.c:646              <= Recv header, 0000000073 bytes (0x00000049)
+20:18:54.669019 http.c:658              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:18:54.669033 http.c:646              <= Recv header, 0000000059 bytes (0x0000003b)
+20:18:54.669044 http.c:658              <= Recv header: x-github-request-id: 6643:386E8C:5DF6F81:5FEA083:68CB7A1E
+20:18:54.669072 http.c:646              <= Recv header, 0000000002 bytes (0x00000002)
+20:18:54.669090 http.c:658              <= Recv header:
+20:18:54.669160 http.c:699              == Info: Connection #0 to host github.com left intact
+20:18:54.669340 http.c:699              == Info: Found bundle for host: 0x600001f887e0 [can multiplex]
+20:18:54.669371 http.c:699              == Info: Re-using existing connection with host github.com
+20:18:54.669395 http.c:699              == Info: Server auth using Basic with user '6629063'
+20:18:54.669512 http.c:699              == Info: [HTTP/2] [7] OPENED stream for https://github.com/jbelyeu/ParaviewerPlatinum.git/git-receive-pack
+20:18:54.669524 http.c:699              == Info: [HTTP/2] [7] [:method: POST]
+20:18:54.669532 http.c:699              == Info: [HTTP/2] [7] [:scheme: https]
+20:18:54.669540 http.c:699              == Info: [HTTP/2] [7] [:authority: github.com]
+20:18:54.669548 http.c:699              == Info: [HTTP/2] [7] [:path: /jbelyeu/ParaviewerPlatinum.git/git-receive-pack]
+20:18:54.669557 http.c:699              == Info: [HTTP/2] [7] [authorization: Basic NjYyOTA2MzpnaG9fenU5VUNlYjFRTGdFOUhVVXcyeHZFdGxVb3dhcnZ3NEdER1I4]
+20:18:54.669564 http.c:699              == Info: [HTTP/2] [7] [user-agent: git/2.40.1]
+20:18:54.669571 http.c:699              == Info: [HTTP/2] [7] [accept-encoding: deflate, gzip]
+20:18:54.669579 http.c:699              == Info: [HTTP/2] [7] [content-type: application/x-git-receive-pack-request]
+20:18:54.669586 http.c:699              == Info: [HTTP/2] [7] [accept: application/x-git-receive-pack-result]
+20:18:54.669593 http.c:699              == Info: [HTTP/2] [7] [accept-language: en-US, *;q=0.9]
+20:18:54.669733 http.c:646              => Send header, 0000000359 bytes (0x00000167)
+20:18:54.669752 http.c:658              => Send header: POST /jbelyeu/ParaviewerPlatinum.git/git-receive-pack HTTP/2
+20:18:54.669761 http.c:658              => Send header: Host: github.com
+20:18:54.669767 http.c:658              => Send header: Authorization: Basic <redacted>
+20:18:54.669774 http.c:658              => Send header: User-Agent: git/2.40.1
+20:18:54.669780 http.c:658              => Send header: Accept-Encoding: deflate, gzip
+20:18:54.669786 http.c:658              => Send header: Content-Type: application/x-git-receive-pack-request
+20:18:54.669793 http.c:658              => Send header: Accept: application/x-git-receive-pack-result
+20:18:54.669799 http.c:658              => Send header: Accept-Language: en-US, *;q=0.9
+20:18:54.669805 http.c:658              => Send header:
+20:18:54.669813 http.c:699              == Info: upload completely sent off: 14 bytes
+20:18:54.843938 http.c:646              <= Recv header, 0000000013 bytes (0x0000000d)
+20:18:54.844078 http.c:658              <= Recv header: HTTP/2 400
+20:18:54.844100 http.c:646              <= Recv header, 0000000026 bytes (0x0000001a)
+20:18:54.844109 http.c:658              <= Recv header: server: GitHub-Babel/3.0
+20:18:54.844124 http.c:646              <= Recv header, 0000000054 bytes (0x00000036)
+20:18:54.844139 http.c:658              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:18:54.844163 http.c:646              <= Recv header, 0000000041 bytes (0x00000029)
+20:18:54.844181 http.c:658              <= Recv header: content-type: text/plain; charset=UTF-8
+20:18:54.844337 http.c:646              <= Recv header, 0000000019 bytes (0x00000013)
+20:18:54.844400 http.c:658              <= Recv header: content-length: 0
+20:18:54.844410 http.c:646              <= Recv header, 0000000037 bytes (0x00000025)
+20:18:54.844418 http.c:658              <= Recv header: date: Thu, 18 Sep 2025 03:18:54 GMT
+20:18:54.844427 http.c:646              <= Recv header, 0000000023 bytes (0x00000017)
+20:18:54.844434 http.c:658              <= Recv header: x-frame-options: DENY
+20:18:54.844444 http.c:646              <= Recv header, 0000000073 bytes (0x00000049)
+20:18:54.844453 http.c:658              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:18:54.844462 http.c:646              <= Recv header, 0000000059 bytes (0x0000003b)
+20:18:54.844469 http.c:658              <= Recv header: x-github-request-id: 6643:386E8C:5DF7033:5FEA136:68CB7A1E
+20:18:54.844480 http.c:646              <= Recv header, 0000000002 bytes (0x00000002)
+20:18:54.844486 http.c:658              <= Recv header:
+20:18:54.844538 http.c:699              == Info: Connection #0 to host github.com left intact
+error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
